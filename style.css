@@ -324,7 +324,50 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+
+.cont {
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 1000px; 
+     padding: 0px 30px;
+     background-color: #222;
+     border-radius: 25px;
+     transition: 0.5s ease-in;
+ }
+ 
+.hed{
+     color: white;
+     font-size: 2rem;
+ }
+.cont a{
+     width: 75%;
+     text-decoration: none;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+.cont .crd .sb{
+     color: white;
+     text-decoration: none;
+     font-size: 3rem;
+     transition: 0.3s linear;
+ }
+.cont .crd .sb:hover{
+     color: crimson;
+ }
+.cont hr{
+     background-color: white;
+ }
+.cont .crd .bnt{
+     display: flex;
+     justify-content: center;
+     font-size: 1.5rem;
+ }
+.cont .crd .bnt a{
+     color: crimson;
+     
+     /* skills section styling */
+    }
 .skills{
     color: #111;
     background-color: #111;
@@ -725,6 +768,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .cont{
+        width: 100%;
+        margin-left: 1px;
+    }
     .skills .container .cardd {
         width: 50%;
         margin-bottom: 20px;
@@ -750,6 +797,10 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+    }
+    .cont{
+        width: 100%;
+        margin-left: 1px;
     }
 
 }
