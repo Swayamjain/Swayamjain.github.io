@@ -125,6 +125,29 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+.cursor {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 0.1s;
+    pointer-events: none;
+    mix-blend-mode: difference;
+ }
+ 
+ .navbar .logo a:hover ~ .cursor{
+    transition: 0.5s;
+    transform: scale(4);
+}
+
+ .menu li:hover ~ .cursor{
+     transition: 0.5s;
+     transform: scale(4);
+     background-color: #fff;
+ }
+ 
+
+ 
 
 /* menu btn styling */
 .menu-btn{
@@ -186,6 +209,7 @@ section .title::after{
 .home .max-width .row{
   margin-right: 0;
 }
+
 .home .home-content .text-1{
     font-size: 27px;
     
