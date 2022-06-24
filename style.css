@@ -300,7 +300,6 @@ section .title::after{
 /* services section styling */
 .services{
     color:#fff;
-    background: #fff;
 }
 .services .title{
     color: #111;
@@ -322,24 +321,45 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: #FFFDD0;
+    
 }
 .services .serv-content .card:hover{
     background: crimson;
+}
+.services .serv-content .card:nth-child(2){
+    background: url(images/bhwatch.jpg);
+}
+.services .serv-content .card:nth-child(3){
+    background: url(images/bhcode.jpg) right top;
+}
+.services .serv-content .card:nth-child(1){
+    background: url(images/bhdesign.jpg) right top;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
+    color: white;
     transform: scale(1.05);
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #FFFDD0;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
     color: #fff;
 }
+.services .serv-content .card svg{
+    fill: #FFFDD0;
+    transition: 0.3s;
+}
+.services .serv-content .card:hover svg{
+    fill: #fff;
+}
+
+
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
@@ -347,49 +367,9 @@ section .title::after{
 }
 
 
-.cont {
-    margin-left: 70px;
-    margin-top: 20px;
-    width: 1000px; 
-     padding: 0px 30px;
-     background-color: #222;
-     border-radius: 25px;
-     transition: 0.5s ease-in;
- }
- 
-.hed{
-     color: white;
-     font-size: 2rem;
- }
-.cont a{
-     width: 75%;
-     text-decoration: none;
-     display: flex;
-     justify-content: space-between;
- }
- 
-.cont .crd .sb{
-     color: white;
-     text-decoration: none;
-     font-size: 3rem;
-     transition: 0.3s linear;
- }
-.cont .crd .sb:hover{
-     color: crimson;
- }
-.cont hr{
-     background-color: white;
- }
-.cont .crd .bnt{
-     display: flex;
-     justify-content: center;
-     font-size: 1.5rem;
- }
-.cont .crd .bnt a{
-     color: crimson;
+
      
      /* skills section styling */
-    }
 .skills{
     color: #111;
     background-color: #111;
