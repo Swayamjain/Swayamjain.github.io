@@ -1,4 +1,8 @@
 /*  import google fonts */
+@font-face {
+    font-family: roll;
+    src: url(font/get_schwifty.ttf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -53,11 +57,11 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 300;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "roll";
 }
 section .title::before{
     content: "";
@@ -143,7 +147,7 @@ section .title::after{
 
  .menu li:hover ~ .cursor{
      transition: 0.5s;
-     transform: scale(4);
+     transform: scale(5);
      background-color: #fff;
  }
  
@@ -216,8 +220,10 @@ section .title::after{
     
 }
 .home .home-content .text-2{
+    font-family: 'roll';
     font-size: 75px;
-    font-weight: 600;
+    letter-spacing: 11px;
+    font-weight: 100;
     margin-left: -3px;
 }
 .home .home-content .text-3{
@@ -255,6 +261,7 @@ section .title::after{
 }
 .about{
     background: #111;
+    height: max-content;
 }
 .about .about-content .left{
     width: 45%;
@@ -301,6 +308,7 @@ section .title::after{
 /* services section styling */
 .services{
     color:#fff;
+    height: max-content;
 }
 .services .title{
     color: #111;
@@ -315,6 +323,8 @@ section .title::after{
     content: "what i provide";
 }
 .services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
     padding: 80px 30px;
 }
 .services .serv-content .card{
@@ -388,6 +398,8 @@ section .title::after{
 .skills{
     color: #111;
     background-color: #111;
+    display: flex;
+    flex-wrap: wrap;
 }
 .skills .title{
     color: #fff;
@@ -715,6 +727,7 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
+
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -771,17 +784,10 @@ footer span a:hover{
         flex: 100%;
     }
     .services .serv-content .card{
-        width: calc(50% - 10px);
+        width:100%;
         margin-bottom: 20px;
     }
-    .cont{
-        width: 100%;
-        margin-left: 1px;
-    }
-    .skills .container .cardd {
-        width: 50%;
-        margin-bottom: 20px;
-    }
+
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
