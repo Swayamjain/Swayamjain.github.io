@@ -221,9 +221,9 @@ section .title::after{
 }
 .home .home-content .text-2{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 75px;
+    font-size: 70px;
     letter-spacing: 11px;
-    font-weight: 100;
+    font-weight: 200;
     margin-left: -3px;
 }
 .home .home-content .text-3{
